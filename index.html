@@ -43,6 +43,7 @@
         .publication-link {
             @apply text-blue-600 hover:underline ml-2;
         }
+        /* Removed experience-item and experience-sub-heading as they are now in a separate file */
     </style>
 </head>
 <body class="antialiased">
@@ -50,12 +51,12 @@
 
         <!-- Header and Navigation -->
         <header class="text-center py-8 mb-10 content-card">
-            <!-- Profile picture moved to About Me section -->
             <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Oladotun Oguntola</h1>
             <p class="text-2xl text-gray-600 mb-6">Information Science Researcher | Data Analyst | Research Assistant</p>
             
             <nav class="flex flex-wrap justify-center gap-4">
                 <a href="index.html" class="nav-link active-nav-link">About</a>
+                <a href="experience.html" class="nav-link">Experience</a> <!-- Updated link to new experience.html -->
                 <a href="projects.html" class="nav-link">Projects</a>
                 <a href="publications.html" class="nav-link">Publications</a>
                 <a href="contact.html" class="nav-link">Contact</a>
@@ -65,7 +66,7 @@
         <!-- About Me Section -->
         <section id="about" class="content-card">
             <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
-                <img src="img/pass.jpg" alt="Oladotun Oguntola's Photo" class="profile-photo w-72 h-48 object-cover flex-shrink-0">
+                <img src="img/pass.jpg" alt="Oladotun Oguntola's Photo" class="profile-photo w-48 h-48 object-cover flex-shrink-0">
                 
                 <div>
                     <h2 class="section-heading mt-0 md:mt-0">About Me</h2>
@@ -76,64 +77,6 @@
                         My passion lies in exploring collaborative patterns and output trends in research, and I am driven to contribute to the advancement of information science through rigorous, data-driven inquiry. I am eager to pursue a PhD to deepen my expertise, engage in cutting-edge research, and collaborate with leading experts in the field.
                     </p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Academic Background Section -->
-        <section id="academic" class="content-card">
-            <h2 class="section-heading">Academic Background</h2>
-
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold text-gray-800">MSc, Data and Information Science</h3>
-                <p class="text-gray-600">
-                    University of Ibadan, Nigeria | 2025 (Expected)
-                </p>
-                <p class="text-gray-600 text-sm">
-                    **CGPA:** 6.39/7
-                </p>
-            </div>
-
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold text-gray-800">B.Tech, Project Management Technology</h3>
-                <p class="text-gray-600">
-                    Federal University of Technology Akure | 2018
-                </p>
-                <p class="text-gray-600 text-sm">
-                    **GPA:** 4.23/5.0
-                </p>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="content-card">
-            <h2 class="section-heading">Skills</h2>
-
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Languages:</h3>
-            <div class="flex flex-wrap mb-6">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL</span>
-            </div>
-
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Tools:</h3>
-            <div class="flex flex-wrap mb-6">
-                <span class="skill-tag">Google Sheets</span>
-                <span class="skill-tag">Excel</span>
-                <span class="skill-tag">Google Colab</span>
-                <span class="skill-tag">Apps Script</span>
-            </div>
-
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Concepts:</h3>
-            <div class="flex flex-wrap mb-6">
-                <span class="skill-tag">Data Cleaning</span>
-                <span class="skill-tag">Web Scraping</span>
-                <span class="skill-tag">Bibliometrics</span>
-                <span class="skill-tag">Automation</span>
-            </div>
-
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Other:</h3>
-            <div class="flex flex-wrap">
-                <span class="skill-tag">Project Management</span>
-                <span class="skill-tag">Process Optimization</span>
             </div>
         </section>
 

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Oladotun Oguntola</title>
+    <!-- Tailwind CSS CDN for quick setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to enhance the Tailwind defaults and set the academic tone */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* A light, calming background */
+            color: #2c3e50; /* Darker text for readability */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px; /* Max width for content, common in academic sites */
+        }
+        .section-heading {
+            @apply text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-600 pb-2;
+        }
+        .content-card {
+            @apply bg-white p-8 rounded-xl shadow-lg mb-10; /* More pronounced shadow and rounded corners */
+        }
+        .nav-link {
+            @apply text-lg font-medium text-gray-700 hover:text-blue-700 transition-colors duration-200 ease-in-out px-4 py-2 rounded-md;
+        }
+        .active-nav-link {
+            @apply bg-blue-100 text-blue-800; /* Highlight for the current page */
+        }
+        /* Removed .profile-photo from here */
+        .experience-item {
+            @apply mb-6 pb-6 border-b border-gray-200 last:border-b-0 last:pb-0;
+        }
+        .experience-sub-heading {
+            @apply text-2xl font-semibold text-gray-700 mb-4;
+        }
+        .back-to-main-link {
+            @apply inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200 mb-8;
+        }
+        .back-to-main-link svg {
+            @apply mr-2 h-4 w-4;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto px-4 py-8">
+
+        <!-- Header and Navigation (Consistent with other pages) -->
+        <header class="text-center py-8 mb-10 content-card">
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Oladotun Oguntola</h1>
+            <p class="text-2xl text-gray-600 mb-6">Information Science Researcher | Data Analyst | Research Assistant</p>
+            
+            <nav class="flex flex-wrap justify-center gap-4">
+                <a href="index.html" class="nav-link">About</a>
+                <a href="experience.html" class="nav-link active-nav-link">Experience</a> <!-- Active link for this page -->
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Experience Section -->
+        <section id="experience" class="content-card">
+            <h2 class="section-heading">Experience</h2>
+
+            <!-- Back to Main Profile Link -->
+            <a href="index.html" class="back-to-main-link">
+                Back to Main Profile
+            </a>
+
+            <!-- Education Sub-section -->
+            <div class="mb-8">
+                <h3 class="experience-sub-heading">Education</h3>
+                <div class="experience-item">
+                    <h4 class="text-xl font-semibold text-gray-800">MSc, Data and Information Science</h4>
+                    <p class="text-gray-600 text-lg">University of Ibadan, Nigeria</p>
+                    <p class="text-gray-600 text-base">2025 (Expected)</p>
+                    <p class="text-gray-600 text-sm">**CGPA:** 6.39/7</p>
+                </div>
+
+                <div class="experience-item">
+                    <h4 class="text-xl font-semibold text-gray-800">B.Tech, Project Management Technology</h4>
+                    <p class="text-gray-600 text-lg">Federal University of Technology Akure</p>
+                    <p class="text-gray-600 text-base">2018</p>
+                    <p class="text-gray-600 text-sm">**GPA:** 4.23/5.0</p>
+                </div>
+            </div>
+
+            <!-- Work Experience Sub-section -->
+            <div>
+                <h3 class="experience-sub-heading">Work Experience & Engagements</h3>
+
+                <div class="experience-item">
+                    <h4 class="text-xl font-semibold text-gray-800">Volunteer Research Assistant (Remote)</h4>
+                    <p class="text-gray-600 text-lg">For researchers affiliated with University of South Africa & Canada</p>
+                    <p class="text-gray-600 text-base">2024 – Present</p>
+                    <ul class="list-disc pl-5 text-gray-700 text-base mt-2">
+                        <li>Performed data scraping and cleaning from ORCID, Scopus, OpenCitation, and OpenAlex using Python in Google Colab.</li>
+                        <li>Support ongoing research in bibliometrics and Scientometrics.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h4 class="text-xl font-semibold text-gray-800">Tutorial Facilitator</h4>
+                    <p class="text-gray-600 text-lg">MSc Tutorials, University of Ibadan</p>
+                    <p class="text-gray-600 text-base">2024</p>
+                    <ul class="list-disc pl-5 text-gray-700 text-base mt-2">
+                        <li>Facilitated tutorials on Schema Diagrams (Database Management) and Introduction to Python.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h4 class="text-xl font-semibold text-gray-800">Automated Certificate Generator</h4>
+                    <p class="text-gray-600 text-lg">MAXDrive.ai (Research & Technical Project)</p>
+                    <p class="text-gray-600 text-base">Dates: [Add relevant dates if available]</p>
+                    <ul class="list-disc pl-5 text-gray-700 text-base mt-2">
+                        <li>Built an automation tool with Google Sheets, Docs, and Apps Script, reducing workload by 96.7%.</li>
+                    </ul>
+                    <p class="text-gray-600 text-sm mt-2">
+                        <a href="project-details/project-2-certificate-generator.html" class="text-blue-600 hover:underline">View Project Details &rarr;</a>
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <h4 class="text-xl font-semibold text-gray-800">Volunteer HTML Instructor</h4>
+                    <p class="text-gray-600 text-lg">Elementary School Outreach</p>
+                    <p class="text-gray-600 text-base">2017</p>
+                    <ul class="list-disc pl-5 text-gray-700 text-base mt-2">
+                        <li>Introduced the basics of HTML to elementary school students in a one-day workshop.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h4 class="text-xl font-semibold text-gray-800">Presenter</h4>
+                    <p class="text-gray-600 text-lg">AK.TE Scholar Group (FUTA)</p>
+                    <p class="text-600 text-base">2017</p>
+                    <ul class="list-disc pl-5 text-gray-700 text-base mt-2">
+                        <li>Delivered a presentation on the historical fall of the Nigerian currency (1963–2017).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer (Consistent with other pages) -->
+        <footer class="text-center text-gray-500 text-sm py-8 mt-10">
+            &copy; 2025 Oladotun Oguntola. Built with HTML and Tailwind CSS.
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Projects - Your Name</title>
+    <!-- Tailwind CSS CDN for quick setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to enhance the Tailwind defaults and set the academic tone */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* A light, calming background */
+            color: #2c3e50; /* Darker text for readability */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px; /* Max width for content, common in academic sites */
+        }
+        .section-heading {
+            @apply text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-600 pb-2;
+        }
+        .content-card {
+            @apply bg-white p-8 rounded-xl shadow-lg mb-10; /* More pronounced shadow and rounded corners */
+        }
+        .nav-link {
+            @apply text-lg font-medium text-gray-700 hover:text-blue-700 transition-colors duration-200 ease-in-out px-4 py-2 rounded-md;
+        }
+        .active-nav-link {
+            @apply bg-blue-100 text-blue-800; /* Highlight for the current page */
+        }
+        .profile-photo {
+            @apply rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-md;
+        }
+        .project-item {
+            @apply mb-8 pb-8 border-b border-gray-200 last:border-b-0 last:pb-0; /* Separator for project entries */
+        }
+        .project-title-link {
+            @apply text-blue-700 hover:underline;
+        }
+        .learn-more-link {
+            @apply inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200;
+        }
+        .back-to-main-link {
+            @apply inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200 mb-8;
+        }
+        .back-to-main-link svg {
+            @apply mr-2 h-5 w-5;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto px-4 py-8">
+
+        <!-- Header and Navigation (Consistent with index.html) -->
+        <header class="text-center py-8 mb-10 content-card">
+            <img src="https://placehold.co/180x180/e0e7ff/3b82f6?text=Your+Photo" alt="Your Professional Photo" class="profile-photo w-40 h-40 object-cover">
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Your Full Name</h1>
+            <p class="text-2xl text-gray-600 mb-6">Aspiring PhD Candidate in [Your Specific Field, e.g., Computational Neuroscience]</p>
+            
+            <nav class="flex flex-wrap justify-center gap-4">
+                <a href="index.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link active-nav-link">Projects</a> <!-- Active link for this page -->
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-card">
+            <h2 class="section-heading">My Research Projects</h2>
+
+            <!-- Back to Main Profile Link (Optional, but good for UX) -->
+            <a href="index.html" class="back-to-main-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+                Back to Main Profile
+            </a>
+
+            <!-- Project Item 1 -->
+            <div class="project-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                    <a href="project-details/project-1.html" class="project-title-link">Project Title: [Machine Learning for Climate Modeling]</a>
+                </h3>
+                <p class="text-gray-600 text-base mb-2">
+                    [Your Role, e.g., Lead Researcher] | [Institution/Lab Name] | [Start Date] – [End Date]
+                </p>
+                <p class="text-lg text-gray-700 mb-4">
+                    **Brief Overview:** This project explored the application of deep learning techniques to enhance the accuracy of regional climate predictions. I focused on [mention specific aspect, e.g., developing a novel neural network architecture for spatio-temporal data]. Key outcomes include [briefly mention a result, e.g., a significant reduction in prediction error for temperature anomalies].
+                </p>
+                <a href="project-details/project-1.html" class="learn-more-link">
+                    Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Project Item 2 -->
+            <div class="project-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                    <a href="project-details/project-2.html" class="project-title-link">Project Title: [Qualitative Study on Social Determinants of Health]</a>
+                </h3>
+                <p class="text-gray-600 text-base mb-2">
+                    [Your Role, e.g., Research Assistant] | [Institution/Lab Name] | [Start Date] – [End Date]
+                </p>
+                <p class="text-lg text-gray-700 mb-4">
+                    **Brief Overview:** This research involved conducting in-depth interviews and thematic analysis to understand the lived experiences of marginalized communities regarding healthcare access. My contribution focused on [mention specific aspect, e.g., developing the interview protocol and leading data coding sessions]. The findings provided [briefly mention an insight, e.g., critical insights into systemic barriers to equitable health outcomes].
+                </p>
+                <a href="project-details/project-2.html" class="learn-more-link">
+                    Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Add more project-item divs here for additional projects -->
+
+        </section>
+
+        <!-- Footer (Consistent with index.html) -->
+        <footer class="text-center text-gray-500 text-sm py-8 mt-10">
+            &copy; 2025 Your Full Name. Built with HTML and Tailwind CSS.
+        </footer>
+
+    </div>
+</body>
+</html>

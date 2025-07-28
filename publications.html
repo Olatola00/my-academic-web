@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Your Name</title>
+    <!-- Tailwind CSS CDN for quick setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to enhance the Tailwind defaults and set the academic tone */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* A light, calming background */
+            color: #2c3e50; /* Darker text for readability */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px; /* Max width for content, common in academic sites */
+        }
+        .section-heading {
+            @apply text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-600 pb-2;
+        }
+        .content-card {
+            @apply bg-white p-8 rounded-xl shadow-lg mb-10; /* More pronounced shadow and rounded corners */
+        }
+        .nav-link {
+            @apply text-lg font-medium text-gray-700 hover:text-blue-700 transition-colors duration-200 ease-in-out px-4 py-2 rounded-md;
+        }
+        .active-nav-link {
+            @apply bg-blue-100 text-blue-800; /* Highlight for the current page */
+        }
+        .profile-photo {
+            @apply rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-md;
+        }
+        .publication-item {
+            @apply mb-6 pb-6 border-b border-gray-200 last:border-b-0 last:pb-0; /* Separator for publication entries */
+        }
+        .publication-link {
+            @apply text-blue-600 hover:underline ml-2;
+        }
+        .back-to-main-link {
+            @apply inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200 mb-8;
+        }
+        .back-to-main-link svg {
+            @apply mr-2 h-5 w-5;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto px-4 py-8">
+
+        <!-- Header and Navigation (Consistent with other pages) -->
+        <header class="text-center py-8 mb-10 content-card">
+            <img src="https://placehold.co/180x180/e0e7ff/3b82f6?text=Your+Photo" alt="Your Professional Photo" class="profile-photo w-40 h-40 object-cover">
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Your Full Name</h1>
+            <p class="text-2xl text-gray-600 mb-6">Aspiring PhD Candidate in [Your Specific Field, e.g., Computational Neuroscience]</p>
+            
+            <nav class="flex flex-wrap justify-center gap-4">
+                <a href="index.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="publications.html" class="nav-link active-nav-link">Publications</a> <!-- Active link for this page -->
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Publications Section -->
+        <section id="publications-list" class="content-card">
+            <h2 class="section-heading">My Publications & Presentations</h2>
+
+            <!-- Back to Main Profile Link -->
+            <a href="index.html" class="back-to-main-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+                Back to Main Profile
+            </a>
+
+            <ul class="list-disc pl-5 text-lg text-gray-700">
+                <!-- Journal Article Example -->
+                <li class="publication-item">
+                    <p class="font-semibold mb-1">
+                        "[Journal Article Title: e.g., A Novel Approach to Data Imputation in Longitudinal Studies]"
+                    </p>
+                    <p class="text-gray-600 text-base mb-1">
+                        Your Name, Co-Author(s). *Journal Name*, Vol(Issue): pages, Year.
+                    </p>
+                    <p class="text-gray-600 text-sm">
+                        <span class="font-medium">DOI:</span> <a href="[Link to DOI]" target="_blank" class="publication-link">[e.g., 10.1000/xyz123]</a>
+                        <span class="ml-4 font-medium">PDF:</span> <a href="[Link to PDF]" target="_blank" class="publication-link">Download</a>
+                    </p>
+                </li>
+
+                <!-- Conference Paper Example -->
+                <li class="publication-item">
+                    <p class="font-semibold mb-1">
+                        "[Conference Paper Title: e.g., Enhancing Interpretability of Deep Learning Models for Medical Diagnosis]"
+                    </p>
+                    <p class="text-gray-600 text-base mb-1">
+                        Your Name, Co-Author(s). *Proceedings of [Conference Name]*, [Location], Year.
+                    </p>
+                    <p class="text-gray-600 text-sm">
+                        <span class="font-medium">Abstract:</span> <a href="[Link to Abstract/Proceedings]" target="_blank" class="publication-link">View Abstract</a>
+                        <span class="ml-4 font-medium">Poster/Slides:</span> <a href="[Link to Poster/Slides]" target="_blank" class="publication-link">View</a>
+                    </p>
+                </li>
+
+                <!-- Poster Presentation Example -->
+                <li class="publication-item">
+                    <p class="font-semibold mb-1">
+                        "[Poster Presentation Title: e.g., Exploring the Neural Correlates of Decision Making]"
+                    </p>
+                    <p class="text-gray-600 text-base mb-1">
+                        Your Name. *[Event Name, e.g., University Research Symposium]*, [Location], [Date].
+                    </p>
+                    <p class="text-gray-600 text-sm">
+                        <span class="font-medium">Poster:</span> <a href="[Link to Poster PDF]" target="_blank" class="publication-link">View Poster</a>
+                    </p>
+                </li>
+
+                <!-- Add more publication-item list items as needed -->
+            </ul>
+        </section>
+
+        <!-- Footer (Consistent with other pages) -->
+        <footer class="text-center text-gray-500 text-sm py-8 mt-10">
+            &copy; 2025 Your Full Name. Built with HTML and Tailwind CSS.
+        </footer>
+
+    </div>
+</body>
+</html>

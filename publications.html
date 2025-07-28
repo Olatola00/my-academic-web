@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Your Name</title>
+    <title>Publications - Oladotun Oguntola</title>
     <!-- Tailwind CSS CDN for quick setup -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter for clean typography -->
@@ -31,31 +31,24 @@
         .active-nav-link {
             @apply bg-blue-100 text-blue-800; /* Highlight for the current page */
         }
-        .profile-photo {
-            @apply rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-md;
-        }
+        /* Removed .profile-photo from here */
         .publication-item {
             @apply mb-6 pb-6 border-b border-gray-200 last:border-b-0 last:pb-0; /* Separator for publication entries */
         }
         .publication-link {
             @apply text-blue-600 hover:underline ml-2;
         }
-        .back-to-main-link {
-            @apply inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200 mb-8;
-        }
-        .back-to-main-link svg {
-            @apply mr-2 h-5 w-5;
-        }
+        /* Removed .back-to-main-link svg styling */
     </style>
 </head>
 <body class="antialiased">
     <div class="container mx-auto px-4 py-8">
 
-        <!-- Header and Navigation (Consistent with other pages) -->
+        <!-- Header and Navigation (Consistent with other pages, but no picture) -->
         <header class="text-center py-8 mb-10 content-card">
-            <img src="https://placehold.co/180x180/e0e7ff/3b82f6?text=Your+Photo" alt="Your Professional Photo" class="profile-photo w-40 h-40 object-cover">
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Your Full Name</h1>
-            <p class="text-2xl text-gray-600 mb-6">Aspiring PhD Candidate in [Your Specific Field, e.g., Computational Neuroscience]</p>
+            <!-- Profile picture removed from here -->
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Oladotun Oguntola</h1>
+            <p class="text-2xl text-gray-600 mb-6">Information Science Researcher | Data Analyst | Research Assistant</p>
             
             <nav class="flex flex-wrap justify-center gap-4">
                 <a href="index.html" class="nav-link">About</a>
@@ -67,65 +60,82 @@
 
         <!-- Publications Section -->
         <section id="publications-list" class="content-card">
-            <h2 class="section-heading">My Publications & Presentations</h2>
+            <h2 class="section-heading">My Publications & Public Outreach</h2>
 
             <!-- Back to Main Profile Link -->
-            <a href="index.html" class="back-to-main-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-                </svg>
+            <a href="index.html" class="inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200 mb-8">
                 Back to Main Profile
             </a>
 
             <ul class="list-disc pl-5 text-lg text-gray-700">
-                <!-- Journal Article Example -->
+                <!-- Working Paper -->
                 <li class="publication-item">
                     <p class="font-semibold mb-1">
-                        "[Journal Article Title: e.g., A Novel Approach to Data Imputation in Longitudinal Studies]"
+                        "Working Paper: Trends in Research Productivity and Research Collaboration in Nigeria"
                     </p>
                     <p class="text-gray-600 text-base mb-1">
-                        Your Name, Co-Author(s). *Journal Name*, Vol(Issue): pages, Year.
+                        Oladotun Oguntola. 2025.
                     </p>
                     <p class="text-gray-600 text-sm">
-                        <span class="font-medium">DOI:</span> <a href="[Link to DOI]" target="_blank" class="publication-link">[e.g., 10.1000/xyz123]</a>
-                        <span class="ml-4 font-medium">PDF:</span> <a href="[Link to PDF]" target="_blank" class="publication-link">Download</a>
+                        <span class="font-medium">Description:</span> Explores collaborative patterns and output trends in Nigerian research using bibliometric data. Involved cleaning and analyzing 100k+ articles’ metadata from Scopus Database.
+                        <!-- Add link to paper if available -->
                     </p>
                 </li>
 
-                <!-- Conference Paper Example -->
+                <!-- Medium Blog -->
                 <li class="publication-item">
                     <p class="font-semibold mb-1">
-                        "[Conference Paper Title: e.g., Enhancing Interpretability of Deep Learning Models for Medical Diagnosis]"
+                        Medium Blog: Writing articles on automation, analytics, and research trends.
                     </p>
                     <p class="text-gray-600 text-base mb-1">
-                        Your Name, Co-Author(s). *Proceedings of [Conference Name]*, [Location], Year.
+                        Oladotun Oguntola. Ongoing.
                     </p>
                     <p class="text-gray-600 text-sm">
-                        <span class="font-medium">Abstract:</span> <a href="[Link to Abstract/Proceedings]" target="_blank" class="publication-link">View Abstract</a>
-                        <span class="ml-4 font-medium">Poster/Slides:</span> <a href="[Link to Poster/Slides]" target="_blank" class="publication-link">View</a>
+                        <span class="font-medium">Link:</span> <a href="https://olatola00.medium.com" target="_blank" class="publication-link">olatola00.medium.com</a>
                     </p>
                 </li>
 
-                <!-- Poster Presentation Example -->
+                <!-- Presenter, AK.TE Scholar Group (FUTA) – 2017 -->
                 <li class="publication-item">
                     <p class="font-semibold mb-1">
-                        "[Poster Presentation Title: e.g., Exploring the Neural Correlates of Decision Making]"
+                        Presentation: "The Historical Fall of the Nigerian Currency (1963–2017)"
                     </p>
                     <p class="text-gray-600 text-base mb-1">
-                        Your Name. *[Event Name, e.g., University Research Symposium]*, [Location], [Date].
-                    </p>
-                    <p class="text-gray-600 text-sm">
-                        <span class="font-medium">Poster:</span> <a href="[Link to Poster PDF]" target="_blank" class="publication-link">View Poster</a>
+                        Presenter, AK.TE Scholar Group (FUTA) | 2017.
                     </p>
                 </li>
 
-                <!-- Add more publication-item list items as needed -->
+                <!-- Volunteer HTML Instructor, Elementary School Outreach – 2017 -->
+                <li class="publication-item">
+                    <p class="font-semibold mb-1">
+                        Volunteer HTML Instructor, Elementary School Outreach
+                    </p>
+                    <p class="text-gray-600 text-base mb-1">
+                        2017.
+                    </p>
+                    <p class="text-gray-600 text-sm">
+                        <span class="font-medium">Description:</span> Introduced the basics of HTML to elementary school students in a one-day workshop.
+                    </p>
+                </li>
+
+                <!-- Tutorial Facilitator, MSc Tutorials, University of Ibadan – 2024 -->
+                <li class="publication-item">
+                    <p class="font-semibold mb-1">
+                        Tutorial Facilitator, MSc Tutorials (University of Ibadan)
+                    </p>
+                    <p class="text-gray-600 text-base mb-1">
+                        2024.
+                    </p>
+                    <p class="text-gray-600 text-sm">
+                        <span class="font-medium">Topics:</span> Schema Diagrams (Database Mgt), Introduction to Python.
+                    </p>
+                </li>
             </ul>
         </section>
 
         <!-- Footer (Consistent with other pages) -->
         <footer class="text-center text-gray-500 text-sm py-8 mt-10">
-            &copy; 2025 Your Full Name. Built with HTML and Tailwind CSS.
+            &copy; 2025 Oladotun Oguntola. Built with HTML and Tailwind CSS.
         </footer>
 
     </div>

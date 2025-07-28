@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - PhD Candidate Profile</title>
+    <title>Oladotun Oguntola - PhD Candidate Profile</title>
     <!-- Tailwind CSS CDN for quick setup -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter for clean typography -->
@@ -34,6 +34,15 @@
         .profile-photo {
             @apply rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-md;
         }
+        .skill-tag {
+            @apply inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2;
+        }
+        .publication-item {
+            @apply mb-4 pb-4 border-b border-gray-200 last:border-b-0 last:pb-0;
+        }
+        .publication-link {
+            @apply text-blue-600 hover:underline ml-2;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -41,9 +50,9 @@
 
         <!-- Header and Navigation -->
         <header class="text-center py-8 mb-10 content-card">
-            <img src="https://placehold.co/180x180/e0e7ff/3b82f6?text=Your+Photo" alt="Your Professional Photo" class="profile-photo w-40 h-40 object-cover">
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Your Full Name</h1>
-            <p class="text-2xl text-gray-600 mb-6">Aspiring PhD Candidate in [Your Specific Field, e.g., Computational Neuroscience]</p>
+            <img src="img/pass.jpg" alt="Oladotun Oguntola's Photo">
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Oladotun Oguntola</h1>
+            <p class="text-2xl text-gray-600 mb-6">Information Science Researcher | Data Analyst | Research Assistant</p>
             
             <nav class="flex flex-wrap justify-center gap-4">
                 <a href="index.html" class="nav-link active-nav-link">About</a>
@@ -57,16 +66,84 @@
         <section id="about" class="content-card">
             <h2 class="section-heading">About Me</h2>
             <p class="text-lg text-gray-700 mb-4">
-                I am a dedicated and curious researcher with a background in [Your Undergraduate/Master's Discipline, e.g., Electrical Engineering and Computer Science]. My academic journey has instilled in me a deep appreciation for [mention a broad area, e.g., interdisciplinary problem-solving] and a robust skill set in [mention 2-3 key technical skills, e.g., data analysis, algorithm development, experimental design]. I am particularly drawn to [specific research interest 1, e.g., the intersection of machine learning and cognitive science] and [specific research interest 2, e.g., developing novel computational models for complex biological systems].
+                I am an Information Science Researcher, Data Analyst, and Research Assistant based in Oyo State, Nigeria. My work focuses on leveraging data to derive insights and solve complex problems, particularly within the realm of bibliometrics and Scientometrics. I have extensive experience in data scraping, cleaning, and analysis using Python, and a strong background in project management.
             </p>
             <p class="text-lg text-gray-700">
-                My motivation for pursuing a PhD stems from a desire to contribute meaningfully to [a grand challenge or specific area of knowledge, e.g., understanding the mechanisms of human intelligence / advancing sustainable energy solutions]. I am eager to immerse myself in a rigorous research environment where I can [mention what you seek in a PhD, e.g., explore fundamental questions, develop innovative methodologies, collaborate with leading experts]. This profile serves as a comprehensive overview of my academic journey, research experiences, and aspirations.
+                My passion lies in exploring collaborative patterns and output trends in research, and I am driven to contribute to the advancement of information science through rigorous, data-driven inquiry. I am eager to pursue a PhD to deepen my expertise, engage in cutting-edge research, and collaborate with leading experts in the field.
             </p>
         </section>
 
-        <!-- Footer -->
+        <!-- Academic Background Section -->
+        <section id="academic" class="content-card">
+            <h2 class="section-heading">Academic Background</h2>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">MSc, Data and Information Science</h3>
+                <p class="text-gray-600">
+                    University of Ibadan, Nigeria | 2025 (Expected)
+                </p>
+                <p class="text-gray-600 text-sm">
+                    **CGPA:** 6.39/7
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">B.Tech, Project Management Technology</h3>
+                <p class="text-gray-600">
+                    Federal University of Technology Akure | 2018
+                </p>
+                <p class="text-gray-600 text-sm">
+                    **GPA:** 4.23/5.0
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="content-card">
+            <h2 class="section-heading">Skills</h2>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Languages:</h3>
+            <div class="flex flex-wrap mb-6">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Tools:</h3>
+            <div class="flex flex-wrap mb-6">
+                <span class="skill-tag">Google Sheets</span>
+                <span class="skill-tag">Excel</span>
+                <span class="skill-tag">Google Colab</span>
+                <span class="skill-tag">Apps Script</span>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Concepts:</h3>
+            <div class="flex flex-wrap mb-6">
+                <span class="skill-tag">Data Cleaning</span>
+                <span class="skill-tag">Web Scraping</span>
+                <span class="skill-tag">Bibliometrics</span>
+                <span class="skill-tag">Automation</span>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Other:</h3>
+            <div class="flex flex-wrap">
+                <span class="skill-tag">Project Management</span>
+                <span class="skill-tag">Process Optimization</span>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="content-card">
+            <h2 class="section-heading">Certifications</h2>
+            <ul class="list-disc pl-5 text-lg text-gray-700">
+                <li class="mb-2">McKinsey Forward Program – McKinsey Academy (2024)</li>
+                <li class="mb-2">Python for Data Science I & II – Dataquest.io (2021)</li>
+                <li class="mb-2">IBM Explorer Award: Intro to Data Science & Analytics (2019)</li>
+            </ul>
+        </section>
+
+        <!-- Footer (Consistent with other pages) -->
         <footer class="text-center text-gray-500 text-sm py-8 mt-10">
-            &copy; 2025 Your Full Name. Built with HTML and Tailwind CSS.
+            &copy; 2025 Oladotun Oguntola. Built with HTML and Tailwind CSS.
         </footer>
 
     </div>

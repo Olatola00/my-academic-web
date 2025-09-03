@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title: [Machine Learning for Climate Modeling] - Your Name</title>
+    <title>Data Wrangling and Breed Analysis - Oladotun Oguntola</title>
     <!-- Tailwind CSS CDN for quick setup -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter for clean typography -->
@@ -31,104 +31,89 @@
         .active-nav-link {
             @apply bg-blue-100 text-blue-800; /* Highlight for the current page */
         }
-        .profile-photo {
-            @apply rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-md;
-        }
+        /* Removed .profile-photo from here */
         .skill-tag {
             @apply inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2;
         }
-        .back-to-projects-link {
-            @apply inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200 mb-8;
-        }
-        .back-to-projects-link svg {
-            @apply mr-2 h-5 w-5;
-        }
+        /* Removed .back-to-projects-link svg styling */
     </style>
 </head>
 <body class="antialiased">
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-10 py-6">
 
-        <!-- Header and Navigation (Consistent with other pages) -->
+        <!-- Header and Navigation -->
         <header class="text-center py-8 mb-10 content-card">
-            <img src="https://placehold.co/180x180/e0e7ff/3b82f6?text=Your+Photo" alt="Your Professional Photo" class="profile-photo w-40 h-40 object-cover">
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Your Full Name</h1>
-            <p class="text-2xl text-gray-600 mb-6">Aspiring PhD Candidate in [Your Specific Field, e.g., Computational Neuroscience]</p>
-            
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Oladotun Oguntola</h1>
+                        
             <nav class="flex flex-wrap justify-center gap-4">
-                <a href="../index.html" class="nav-link">About</a>
-                <a href="../projects.html" class="nav-link active-nav-link">Projects</a> <!-- Projects is active as this is a project detail page -->
-                <a href="../publications.html" class="nav-link">Publications</a>
-                <a href="../contact.html" class="nav-link">Contact</a>
+                <a href="index.html" class="nav-link active-nav-link">About</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="projects.html" class="nav-link">Code</a>                
+                <a href="contact.html" class="nav-link">Contact</a>
             </nav>
         </header>
 
         <!-- Project Detail Section -->
         <section class="content-card">
 
-            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Project Title: [Machine Learning for Climate Modeling]</h1>
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Data Wrangling and Breed Analysis</h1>
             <p class="text-gray-600 text-lg mb-6">
-                [Your Role, e.g., Lead Researcher] | [Institution/Lab Name] | [Start Date] – [End Date]
+                Personal Project
             </p>
 
             <h2 class="section-heading">Project Overview</h2>
             <p class="text-lg text-gray-700 mb-6">
-                Provide a comprehensive overview of the project. What was the core problem you aimed to solve? What was the context or motivation behind this research?
-                <br><br>
-                *Example: "This project addressed the challenge of accurately predicting localized climate patterns using advanced machine learning techniques. Traditional climate models often struggle with fine-grained regional forecasts due to computational limitations. Our primary goal was to develop a more efficient and accurate predictive model by leveraging deep neural networks, with significant implications for disaster preparedness and agricultural planning."*
+                This personal project involved the comprehensive analysis of over 5,000 dog breed data points. The primary objective was to extract meaningful insights from raw, unstructured, or semi-structured data, demonstrating proficiency in data acquisition, cleaning, and transformation. The project culminated in a storytelling approach to present the derived insights.
             </p>
 
             <h2 class="section-heading">Methodology</h2>
             <p class="text-lg text-gray-700 mb-6">
-                Detail the methods, techniques, and tools you used. Be specific about your experimental design, data collection, analysis techniques, and any models developed.
-                <br><br>
-                *Example: "We employed a data-driven approach, utilizing historical meteorological data (temperature, precipitation, wind speed) from satellite imagery and ground sensors. Data preprocessing involved handling missing values, normalization, and feature engineering to create spatio-temporal input sequences. A Convolutional Long Short-Term Memory (ConvLSTM) neural network was designed and implemented using TensorFlow and Keras. Model training was performed on a high-performance computing cluster, optimizing for mean squared error."*
+                The methodology involved several key steps:
+                <ul class="list-disc pl-5 mb-4">
+                    <li>**Data Acquisition:** Data points were collected using Python, including interaction with the Twitter API to gather relevant information.</li>
+                    <li>**Data Wrangling & Cleaning:** Extensive cleaning was performed to handle inconsistencies, missing values, and standardize various data formats. This involved using Python libraries such as Pandas and NumPy for efficient data manipulation.</li>
+                    <li>**Exploratory Data Analysis (EDA):** Initial analysis was conducted to understand data distributions, identify patterns, and formulate hypotheses.</li>
+                    <li>**Insight Generation:** Key insights were extracted from the cleaned and analyzed data.</li>
+                    <li>**Storytelling:** The entire process, from data collection to insights, was meticulously documented and presented using a storytelling approach to make complex findings accessible and engaging.</li>
+                </ul>
             </p>
             
             <!-- You can add images, charts, or code snippets here -->
-            <figure class="mb-6 text-center">
-                <img src="https://placehold.co/700x350/e0e7ff/3b82f6?text=Project+Visualization+1" alt="Visualization of model predictions" class="w-full rounded-lg shadow-md mx-auto">
-                <figcaption class="text-sm text-gray-500 mt-2">Fig 1: Example visualization of predicted vs. actual temperature anomalies.</figcaption>
-            </figure>
+            <!-- <figure class="mb-6 text-center">
+                <img src="https://placehold.co/700x350/e0e7ff/3b82f6?text=Data+Wrangling+Visualization" alt="Visualization of data cleaning process" class="w-full rounded-lg shadow-md mx-auto">
+                <figcaption class="text-sm text-gray-500 mt-2">Fig 1: Example visualization of data cleaning steps or insights.</figcaption>
+            </figure> -->
 
             <h2 class="section-heading">Results and Impact</h2>
             <p class="text-lg text-gray-700 mb-6">
-                Summarize your key findings, results, and their significance. What were the main outcomes? How did your work contribute to the field or solve the problem?
-                <br><br>
-                *Example: "Our ConvLSTM model achieved a 20% reduction in mean absolute error (MAE) for 72-hour temperature forecasts compared to traditional statistical methods. The model demonstrated robust performance across diverse geographical regions. This work provides a scalable framework for integrating machine learning into climate modeling, potentially leading to more accurate and timely forecasts that can inform policy decisions and improve community resilience to climate change impacts. The findings were presented at the [e.g., AGU Fall Meeting] conference."*
+                This project successfully demonstrated robust data wrangling capabilities, transforming raw data into a clean, analyzable format. The insights gained from the breed analysis were presented in a clear and compelling narrative, showcasing the ability to communicate complex data findings effectively. This project underscores my proficiency in end-to-end data processing and analysis.
             </p>
 
             <h2 class="section-heading">Technologies & Skills Demonstrated</h2>
             <div class="flex flex-wrap mb-6">
                 <span class="skill-tag">Python</span>
-                <span class="skill-tag">TensorFlow</span>
-                <span class="skill-tag">Keras</span>
                 <span class="skill-tag">Pandas</span>
                 <span class="skill-tag">NumPy</span>
-                <span class="skill-tag">Data Preprocessing</span>
-                <span class="skill-tag">Time Series Analysis</span>
-                <span class="skill-tag">Deep Learning</span>
-                <span class="skill-tag">Climate Modeling</span>
-                <span class="skill-tag">Scientific Visualization</span>
+                <span class="skill-tag">Twitter API</span>
+                <span class="skill-tag">Data Cleaning</span>
+                <span class="skill-tag">Data Wrangling</span>
+                <span class="skill-tag">Exploratory Data Analysis</span>
+                <span class="skill-tag">Storytelling</span>
             </div>
 
             <h2 class="section-heading">Relevant Links</h2>
             <ul class="list-disc pl-5 text-lg text-gray-700">
                 <li class="mb-2">
-                    <span class="font-semibold">GitHub Repository:</span> <a href="[Link to GitHub Repo]" target="_blank" class="text-blue-600 hover:underline">github.com/yourusername/climate-model-project</a>
+                    <span class="font-semibold">GitHub Repository:</span> <a href="https://github.com/Olatola00" target="_blank" class="text-blue-600 hover:underline">github.com/Olatola00</a> (General GitHub profile, link to specific repo if available)
                 </li>
-                <li class="mb-2">
-                    <span class="font-semibold">Full Report/Publication:</span> <a href="[Link to Publication/Report PDF]" target="_blank" class="text-blue-600 hover:underline">Download PDF</a>
-                </li>
-                <li class="mb-2">
-                    <span class="font-semibold">Live Demo (if applicable):</span> <a href="[Link to Live Demo]" target="_blank" class="text-blue-600 hover:underline">View Interactive Demo</a>
-                </li>
-                <!-- Add other relevant links -->
+                <!-- Add other relevant links like a blog post or detailed report if available -->
             </ul>
         </section>
 
         <!-- Footer (Consistent with other pages) -->
         <footer class="text-center text-gray-500 text-sm py-8 mt-10">
-            &copy; 2025 Your Full Name. Built with HTML and Tailwind CSS.
+            &copy; 2025 Oladotun Oguntola. Built with HTML and Tailwind CSS.
         </footer>
 
     </div>

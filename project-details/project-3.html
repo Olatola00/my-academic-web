@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title: [Machine Learning for Climate Modeling] - Your Name</title>
+    <!-- Tailwind CSS CDN for quick setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to enhance the Tailwind defaults and set the academic tone */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* A light, calming background */
+            color: #2c3e50; /* Darker text for readability */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px; /* Max width for content, common in academic sites */
+        }
+        .section-heading {
+            @apply text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-600 pb-2;
+        }
+        .content-card {
+            @apply bg-white p-8 rounded-xl shadow-lg mb-10; /* More pronounced shadow and rounded corners */
+        }
+        .nav-link {
+            @apply text-lg font-medium text-gray-700 hover:text-blue-700 transition-colors duration-200 ease-in-out px-4 py-2 rounded-md;
+        }
+        .active-nav-link {
+            @apply bg-blue-100 text-blue-800; /* Highlight for the current page */
+        }
+        .profile-photo {
+            @apply rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-md;
+        }
+        .skill-tag {
+            @apply inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2;
+        }
+        .back-to-projects-link {
+            @apply inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200 mb-8;
+        }
+        .back-to-projects-link svg {
+            @apply mr-2 h-5 w-5;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto px-4 py-8">
+
+        <!-- Header and Navigation (Consistent with other pages) -->
+        <header class="text-center py-8 mb-10 content-card">
+            <img src="https://placehold.co/180x180/e0e7ff/3b82f6?text=Your+Photo" alt="Your Professional Photo" class="profile-photo w-40 h-40 object-cover">
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-3">Your Full Name</h1>
+            <p class="text-2xl text-gray-600 mb-6">Aspiring PhD Candidate in [Your Specific Field, e.g., Computational Neuroscience]</p>
+            
+            <nav class="flex flex-wrap justify-center gap-4">
+                <a href="../index.html" class="nav-link">About</a>
+                <a href="../projects.html" class="nav-link active-nav-link">Projects</a> <!-- Projects is active as this is a project detail page -->
+                <a href="../publications.html" class="nav-link">Publications</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Project Detail Section -->
+        <section class="content-card">
+
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Project Title: [Machine Learning for Climate Modeling]</h1>
+            <p class="text-gray-600 text-lg mb-6">
+                [Your Role, e.g., Lead Researcher] | [Institution/Lab Name] | [Start Date] – [End Date]
+            </p>
+
+            <h2 class="section-heading">Project Overview</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                Provide a comprehensive overview of the project. What was the core problem you aimed to solve? What was the context or motivation behind this research?
+                <br><br>
+                *Example: "This project addressed the challenge of accurately predicting localized climate patterns using advanced machine learning techniques. Traditional climate models often struggle with fine-grained regional forecasts due to computational limitations. Our primary goal was to develop a more efficient and accurate predictive model by leveraging deep neural networks, with significant implications for disaster preparedness and agricultural planning."*
+            </p>
+
+            <h2 class="section-heading">Methodology</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                Detail the methods, techniques, and tools you used. Be specific about your experimental design, data collection, analysis techniques, and any models developed.
+                <br><br>
+                *Example: "We employed a data-driven approach, utilizing historical meteorological data (temperature, precipitation, wind speed) from satellite imagery and ground sensors. Data preprocessing involved handling missing values, normalization, and feature engineering to create spatio-temporal input sequences. A Convolutional Long Short-Term Memory (ConvLSTM) neural network was designed and implemented using TensorFlow and Keras. Model training was performed on a high-performance computing cluster, optimizing for mean squared error."*
+            </p>
+            
+            <!-- You can add images, charts, or code snippets here -->
+            <figure class="mb-6 text-center">
+                <img src="https://placehold.co/700x350/e0e7ff/3b82f6?text=Project+Visualization+1" alt="Visualization of model predictions" class="w-full rounded-lg shadow-md mx-auto">
+                <figcaption class="text-sm text-gray-500 mt-2">Fig 1: Example visualization of predicted vs. actual temperature anomalies.</figcaption>
+            </figure>
+
+            <h2 class="section-heading">Results and Impact</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                Summarize your key findings, results, and their significance. What were the main outcomes? How did your work contribute to the field or solve the problem?
+                <br><br>
+                *Example: "Our ConvLSTM model achieved a 20% reduction in mean absolute error (MAE) for 72-hour temperature forecasts compared to traditional statistical methods. The model demonstrated robust performance across diverse geographical regions. This work provides a scalable framework for integrating machine learning into climate modeling, potentially leading to more accurate and timely forecasts that can inform policy decisions and improve community resilience to climate change impacts. The findings were presented at the [e.g., AGU Fall Meeting] conference."*
+            </p>
+
+            <h2 class="section-heading">Technologies & Skills Demonstrated</h2>
+            <div class="flex flex-wrap mb-6">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Keras</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Data Preprocessing</span>
+                <span class="skill-tag">Time Series Analysis</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Climate Modeling</span>
+                <span class="skill-tag">Scientific Visualization</span>
+            </div>
+
+            <h2 class="section-heading">Relevant Links</h2>
+            <ul class="list-disc pl-5 text-lg text-gray-700">
+                <li class="mb-2">
+                    <span class="font-semibold">GitHub Repository:</span> <a href="[Link to GitHub Repo]" target="_blank" class="text-blue-600 hover:underline">github.com/yourusername/climate-model-project</a>
+                </li>
+                <li class="mb-2">
+                    <span class="font-semibold">Full Report/Publication:</span> <a href="[Link to Publication/Report PDF]" target="_blank" class="text-blue-600 hover:underline">Download PDF</a>
+                </li>
+                <li class="mb-2">
+                    <span class="font-semibold">Live Demo (if applicable):</span> <a href="[Link to Live Demo]" target="_blank" class="text-blue-600 hover:underline">View Interactive Demo</a>
+                </li>
+                <!-- Add other relevant links -->
+            </ul>
+        </section>
+
+        <!-- Footer (Consistent with other pages) -->
+        <footer class="text-center text-gray-500 text-sm py-8 mt-10">
+            &copy; 2025 Your Full Name. Built with HTML and Tailwind CSS.
+        </footer>
+
+    </div>
+</body>
+</html>
